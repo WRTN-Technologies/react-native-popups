@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Getting Started
 
-![platforms](https://img.shields.io/badge/platforms-Android%20%7C%20iOS-brightgreen.svg?style=flat-square&colorB=191A17) [![npm](https://img.shields.io/npm/v/react-native-global-components.svg?style=flat-square)](https://www.npmjs.com/package/react-native-global-components)
+![platforms](https://img.shields.io/badge/platforms-Android%20%7C%20iOS-brightgreen.svg?style=flat-square&colorB=191A17) [![npm](https://img.shields.io/npm/v/react-native-popups.svg?style=flat-square)](https://www.npmjs.com/package/react-native-popups)
 
 ## Overview 👀
 
@@ -13,11 +13,11 @@ In this project, global component definition is component that used commonly and
 ## Installation 👋🏻
 
 ```bash
-yarn add react-native-global-components
+yarn add react-native-popups
 ```
 
 ```bash
-npm install react-native-global-components
+npm install react-native-popups
 ```
 
 ## Features 🙌

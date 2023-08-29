@@ -15,7 +15,7 @@ module.exports = function (api) {
       //   {
       //     extensions: ['.tsx', '.ts', '.js', '.json'],
       //     alias: {
-      //       'react-native-global-components': './packages/src',
+      //       'react-native-popups': './packages/src',
       //     },
       //   },
       // ],

@@ -19,7 +19,7 @@ interface SlideAnimationConfig {
 
 ```tsx title="MyCustomUI.tsx"
 import Animated from 'react-native-reanimated';
-import { useSlideAnimationStyle } from 'react-native-global-components';
+import { useSlideAnimationStyle } from 'react-native-popups';
 
 interface MyCustomUIProps {
   //

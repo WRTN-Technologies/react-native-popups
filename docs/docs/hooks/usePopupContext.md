@@ -20,7 +20,7 @@ interface UpdateStateProps {
 For example, if you want to add hide animation before component dismissed
 
 ```tsx title="MyCustomPopup.tsx"
-import { createPopup, usePopupContext } from 'react-native-global-components';
+import { createPopup, usePopupContext } from 'react-native-popups';
 
 const MyCustomPopup = () => {
   const { addHideAnimation, hide } = usePopupContext();
@@ -52,7 +52,7 @@ For example, if you have callback on button pressed, you should call `hide` afte
 Unless, your component will be visible forever!! 🤯
 
 ```tsx title="MyCustomPopup.tsx"
-import { createPopup, usePopupContext } from 'react-native-global-components';
+import { createPopup, usePopupContext } from 'react-native-popups';
 
 const MyCustomPopup: React.FC<{ callback: () => void }> = ({ callback }) => {
   const { hide } = usePopupContext();

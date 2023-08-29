@@ -13,7 +13,7 @@ import {
   createPopup,
   useHideOnAndroidBackPress,
   usePopupContext,
-} from 'react-native-global-components';
+} from 'react-native-popups';
 
 interface MyCustomPopupProps {
   //

@@ -21,7 +21,7 @@ First, implement your custom UI or you can use any PopupUIs we provide
 You might need core hooks for state management. see [usePopupContext](/docs/hooks/usePopupContext)
 
 ```tsx title="MyPopup.tsx"
-import { createPopup } from 'react-native-global-components';
+import { createPopup } from 'react-native-popups';
 
 interface MyPopupProps {
   name: string;
@@ -56,7 +56,7 @@ then you can do
 
 ```tsx title="MyPopup.tsx"
 import { useNavigation } from '@react-navigation/native';
-import { createPopup, usePopupContext } from 'react-native-global-components';
+import { createPopup, usePopupContext } from 'react-native-popups';
 
 const MyPopup: FC<MyPopupProps> = ({ name }) => {
   const navigation = useNavigation();

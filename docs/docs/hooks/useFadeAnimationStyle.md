@@ -18,7 +18,7 @@ interface FadeAnimationConfigs {
 
 ```tsx title="MyCustomUI.tsx"
 import Animated from 'react-native-reanimated';
-import { useFadeAnimationStyle } from 'react-native-global-components';
+import { useFadeAnimationStyle } from 'react-native-popups';
 
 const MyCustomUI = () => {
   const { style: fade } = useFadeAnimationStyle({

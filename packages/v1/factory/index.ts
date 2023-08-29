@@ -11,7 +11,7 @@ export function createPopup<T>(Component: React.FC<T>) {
   function show(props: T) {
     if (!internalRef.current) {
       return console.warn(
-        '[react-native-global-components] can not find context make sure rendering Provider',
+        '[react-native-popups] can not find context make sure rendering Provider',
       );
     }
 
@@ -21,7 +21,7 @@ export function createPopup<T>(Component: React.FC<T>) {
   async function hide() {
     if (!internalRef.current) {
       return console.warn(
-        '[react-native-global-components] can not find context make sure rendering Provider',
+        '[react-native-popups] can not find context make sure rendering Provider',
       );
     }
 
@@ -45,6 +45,6 @@ export function createPopup<T>(Component: React.FC<T>) {
 function genUniqueComponentName<T extends React.FC<any>>(Component: T) {
   const unique = Math.round(Math.random() * 1234567890);
   return `${
-    Component.name || Component.displayName || `GlobalComponent`
+    Component.name || Component.displayName || `PopUpComponent`
   }${unique}`;
 }

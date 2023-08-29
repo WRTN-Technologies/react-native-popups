@@ -1,9 +1,9 @@
 {
   "description": "Popup API generator for React Native 🙇🏻‍♂️",
   "homepage": "https://jeongshin.github.io/",
-  "repository": "https://github.com/JeongShin/react-native-global-components",
+  "repository": "https://github.com/JeongShin/react-native-popups",
   "author": "JeongShin (https://github.com/JeongShin)",
-  "name": "react-native-global-components",
+  "name": "react-native-popups",
   "main": "index.js",
   "types": "index.d.ts",
   "version": "1.1.3",

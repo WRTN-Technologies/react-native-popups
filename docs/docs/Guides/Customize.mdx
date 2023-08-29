@@ -9,7 +9,7 @@ import {
   SimpleSnackbarUI,
   SimpleSnackbarProps,
   createPopup,
-} from 'react-native-global-components';
+} from 'react-native-popups';
 
 const styles: SimpleSnackbarProps['styles'] = StyleSheet.create({
   // override default styles
@@ -27,7 +27,7 @@ or you can create your own UI
 ### Step 1. create popup
 
 ```tsx title="Popup.tsx"
-import { createPopup } from 'react-native-global-components';
+import { createPopup } from 'react-native-popups';
 
 // show method requires props for first argument
 // and types will automatically inferred
@@ -156,7 +156,7 @@ const PopupUI = (props: PopupUIProps) => {
 
 ```tsx title="MyCustomHook.ts"
 import Popup from './Popup';
-import { PopupManager } from 'react-native-global-components';
+import { PopupManager } from 'react-native-popups';
 
 const MyCustomHook = () => {
   const myLogic = async () => {
