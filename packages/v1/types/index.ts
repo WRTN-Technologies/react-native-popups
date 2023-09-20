@@ -9,3 +9,7 @@ export interface UsePopupContext {
 }
 
 export type Animation = () => Promise<void>;
+
+export type Mutable<T> = {
+  -readonly [P in keyof T]: T[P];
+};

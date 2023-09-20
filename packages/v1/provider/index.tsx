@@ -6,11 +6,11 @@ import React, {
   useEffect,
 } from 'react';
 import { ExternalPopupContext } from '../context';
-import { PopupContext, Animation } from '../types';
+import { PopupContext, Animation, Mutable } from '../types';
 
 interface ProviderProps<T> {
   Component: React.FC<T>;
-  internalRef: React.RefObject<PopupContext<T>>;
+  internalRef: Mutable<React.RefObject<PopupContext<T>>>;
 }
 
 function Provider<T>({ Component, internalRef }: ProviderProps<T>) {
@@ -42,13 +42,9 @@ function Provider<T>({ Component, internalRef }: ProviderProps<T>) {
 
   useImperativeHandle(internalRef, () => context, []);
 
-  /**
-   * FIXME: any other way to do this??😭
-   */
   useEffect(() => {
     return () => {
       if (prevRef.current) {
-        //@ts-ignore
         internalRef.current = prevRef.current;
       }
       animations.current = [];
