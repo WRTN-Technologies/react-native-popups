@@ -11,7 +11,7 @@ export function createPopup<T>(Component: React.FC<T>) {
   function show(props: T) {
     if (!internalRef.current) {
       return console.warn(
-        '[react-native-popups] can not find context make sure rendering Provider',
+        '[@wrtn/react-native-popups] can not find context make sure rendering Provider',
       );
     }
 
@@ -21,7 +21,7 @@ export function createPopup<T>(Component: React.FC<T>) {
   async function hide() {
     if (!internalRef.current) {
       return console.warn(
-        '[react-native-popups] can not find context make sure rendering Provider',
+        '[@wrtn/react-native-popups] can not find context make sure rendering Provider',
       );
     }
 

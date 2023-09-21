@@ -8,7 +8,7 @@ export function usePopupContext() {
 
   if (!context) {
     throw new Error(
-      '[react-native-popups]  can not find context make sure rendering Provider',
+      '[@wrtn/react-native-popups]  can not find context make sure rendering Provider',
     );
   }
 
@@ -21,7 +21,7 @@ export function usePopupId() {
   const context = useContext(InternalPopupContext);
 
   if (typeof context !== 'number') {
-    throw new Error('[react-native-popups]  can not find context');
+    throw new Error('[@wrtn/react-native-popups]  can not find context');
   }
 
   return context;
